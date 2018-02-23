@@ -1,0 +1,32 @@
+{
+  "name": "reactjs-basics",
+  "version": "1.0.0",
+  "description": "Some basic ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\ dist\\  && copy src\\app\\ dist\\app\\ && webpack-dev-server --content-base src/ --inline --hot --port 8081",
+    "build:prod": "webpack -p && copy src/index.html dist/index.html"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Amit Patil <amit.patil@amdocs.com>",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-2": "^6.11.0",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
