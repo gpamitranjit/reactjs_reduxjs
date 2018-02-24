@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     const numbers = [1, 2, 3, 4, 5];
     const doubledValues = numbers.map((number) => { 
-      return <li>{ number * 2 }</li>
+      return <li key = {number } >{ number * 2 }</li>
      });
 
      return (
@@ -19,3 +19,6 @@ class App extends Component {
      );
   }
 }
+
+
+export default App;
