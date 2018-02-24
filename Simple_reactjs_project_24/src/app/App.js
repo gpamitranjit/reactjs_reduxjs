@@ -9,7 +9,7 @@ class App extends Component {
   }
 
   render() {
-    const numbers = [1, 2, 3, 4, 5];
+    const numbers = this.props.numbers;
     const doubledValues = numbers.map((number) => { 
       return <li key = {number } >{ number * 2 }</li>
      });
