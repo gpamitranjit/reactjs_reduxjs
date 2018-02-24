@@ -8,7 +8,7 @@ class ControlledFormComponent extends Component {
         super(props);
         this.state = {
             value: '',
-            selectedValue: 'coconut'
+            selectedValue: ['coconut']
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -30,7 +30,9 @@ class ControlledFormComponent extends Component {
 
 
     handleOptionChange(event) {
-        this.setState({selectedValue: event.target.value});
+        this.setState({
+            selectedValue: [...event.target.selectedOptions].map(o => o.value)
+        });
     }
 
     render() {
@@ -42,7 +44,7 @@ class ControlledFormComponent extends Component {
                 <input type="text" name="firstName" value = { this.state.value} onChange = { this.handleChange}/>
             </label>
             <h4>Please Choose your faourite fruit</h4>
-            <select value = { this.state.selectedValue } onChange = { this.handleOptionChange} >
+            <select value = { this.state.selectedValue } onChange = { this.handleOptionChange} multiple = { true} >
                 <option value = 'lime'>Lime</option>
                 <option value = 'grapefruit'>Grape Fruit</option>
                 <option value = 'applefruit'>Apple Fruit</option>
