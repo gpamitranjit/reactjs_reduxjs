@@ -8,7 +8,8 @@ class MyComponent extends Component {
     }
 
     render() {
-        return (
+        console.log(this.props.message);
+        return ( 
             <div>passed Message value is : { this.props.message } </div>
         );
     }
