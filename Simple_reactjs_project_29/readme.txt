@@ -1,0 +1,1 @@
+This simple reactjs project illustrate that the react component name should start with Capital letter for transformation otherwise, created component will be treated as html in-built tag and finally if ineed it's not HTML tag then the browser will respond with "un-recognized" tag used as a Warning!
