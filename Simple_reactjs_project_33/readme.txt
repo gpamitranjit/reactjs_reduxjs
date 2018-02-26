@@ -1,0 +1,1 @@
+This is simple reactjs project illustrate the conditional component rendering using boolean variable!
