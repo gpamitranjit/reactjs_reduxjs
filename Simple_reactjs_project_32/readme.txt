@@ -1,0 +1,1 @@
+This simple reactjs project illustrate on how to use functions as children in child component (i.e the content of the parent component will available to child as props with "this.props.children" property)
