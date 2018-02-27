@@ -1,0 +1,1 @@
+This simple reduxjs project illustrate that the use of store on how to update the UI based on change in store state!
